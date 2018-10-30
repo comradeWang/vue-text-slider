@@ -5,6 +5,7 @@
   "author": "WangXinYu <comrade.wang.cn@gmail.com>",
   "license": "MIT",
   "private": false,
+  "main":"dist/vue-text-slider.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
@@ -16,6 +17,15 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comradeWang/vue-text-slider.git"
+  },
+  "keywords": [
+    "vue",
+    "slider",
+    "text"
   ],
   "devDependencies": {
     "babel-core": "^6.26.0",
