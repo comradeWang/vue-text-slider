@@ -16,7 +16,7 @@ npm i vue-text-slider -S
 ### Quick Start
 
 ```javascript
-# in main.js
+// in main.js
 import TextSlider from 'vue-text-slider'
 Vue.use(TextSlider)
 ```
