@@ -31,11 +31,18 @@ Vue.use(TextSlider)
 
 ##### props
 
+```
 - lists: { type: Array, default: [] }  // Text to be displayed
 - speed: { type: Number, default: 40 }  // sliding velocity
+```
 
 ------
 
 ### Preview
 
 ![textSlider](https://image-1252351428.cos.ap-beijing.myqcloud.com/textSlider.gif)
+
+------
+### Github  
+
+[https://github.com/comradeWang/vue-text-slider](https://github.com/comradeWang/vue-text-slider)

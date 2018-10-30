@@ -1,7 +1,7 @@
 {
   "name": "vue-text-slider",
   "description": "一个公告栏滑动的文字效果,请不要下载，还在测试阶段。",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "WangXinYu <comrade.wang.cn@gmail.com>",
   "license": "MIT",
   "private": false,
