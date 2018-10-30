@@ -16,7 +16,16 @@
         text: "" // 数组文字转化后的字符串
       };
     },
-    props: ["lists"], // 父组件传入数据， 数组形式 [ "连雨不知春去"，"一晴方觉夏深"]
+    props: {
+      lists: {
+        type: Array,
+        default: []
+      },
+      speed: {
+        type: Number,
+        default: 40
+      }
+    }, // 父组件传入数据， 数组形式 [ "连雨不知春去"，"一晴方觉夏深"]
     components: {},
     computed: {},
     watch: {},
@@ -29,6 +38,7 @@
         // copy.innerText = this.text; // 文字副本填充
         let distance = 0; // 位移距离
         // 设置位移
+        let self = this;
         setInterval(function () {
           distance = distance - 1;
           // 如果位移超过文字宽度，则回到起点
@@ -36,7 +46,7 @@
             distance = width;
           }
           box.style.transform = "translateX(" + distance + "px)";
-        }, 20);
+        }, self.speed);
       }
     },
     created() {
