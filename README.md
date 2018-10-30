@@ -1,18 +1,41 @@
 # vue-text-slider
 
-> A Vue.js project
+> A Vue Text Slider Component
 
-## Build Setup
+------
+
+### Install
 
 ``` bash
 # install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+npm i vue-text-slider -S
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+------
+
+### Quick Start
+
+```javascript
+# in main.js
+import TextSlider from 'vue-text-slider'
+Vue.use(TextSlider)
+```
+
+```vue
+<TextSlider :lists="lists" :speed="40"></TextSlider>
+```
+
+------
+
+### Params
+
+##### props
+
+- lists: { type: Array, default: [] }  // Text to be displayed
+- speed: { type: Number, default: 40 }  // sliding velocity
+
+------
+
+### Preview
+
+![textSlider](https://image-1252351428.cos.ap-beijing.myqcloud.com/textSlider.gif)
