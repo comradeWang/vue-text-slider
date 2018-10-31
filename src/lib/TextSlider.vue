@@ -1,10 +1,10 @@
 <template>
   <div id="TextSlider">
-    <div id="box">
-      <div id="marquee">{{text}}</div>
-      <div id="copy"></div>
+    <div id="text-slider-box">
+      <div id="text-slider-marquee">{{text}}</div>
+      <div id="text-slider-copy"></div>
     </div>
-    <div id="node">{{text}}</div>
+    <div id="text-slider-node">{{text}}</div>
   </div>
 </template>
 
@@ -32,8 +32,8 @@
     methods: {
       move() {
         // 获取文字text 的计算后宽度  （由于overflow的存在，直接获取不到，需要独立的node计算）
-        let width = document.getElementById("node").getBoundingClientRect().width;
-        let box = document.getElementById("box");
+        let width = document.getElementById("text-slider-node").getBoundingClientRect().width;
+        let box = document.getElementById("text-slider-box");
         // let copy = document.getElementById("copy");
         // copy.innerText = this.text; // 文字副本填充
         let distance = 0; // 位移距离
@@ -71,19 +71,19 @@
   }
 
   /*样式的话可以写*/
-  #box {
+  #text-slider-box {
     width: 500%;
   }
 
-  #box div {
+  #text-slider-box div {
     float: left;
   }
 
-  #marquee {
+  #text-slider-marquee {
     margin: 0 16px 0 0;
   }
 
-  #node {
+  #text-slider-node {
     position: absolute;
     z-index: -99;
     top: -99px;

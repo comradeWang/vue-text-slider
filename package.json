@@ -1,11 +1,11 @@
 {
   "name": "vue-text-slider",
   "description": "一个公告栏滑动的文字效果,请不要下载，还在测试阶段。",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "author": "WangXinYu <comrade.wang.cn@gmail.com>",
   "license": "MIT",
   "private": false,
-  "main":"dist/vue-text-slider.js",
+  "main":"dist/vue-text-slider.js",a
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"

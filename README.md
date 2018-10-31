@@ -1,6 +1,6 @@
 # vue-text-slider
 
-> A Vue Text Slider Component
+> A Vue Text Slider Component, now it's just a test demo, do not download it plz.
 
 ------
 
